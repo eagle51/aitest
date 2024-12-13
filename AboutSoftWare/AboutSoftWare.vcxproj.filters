@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{fa441795-dfe8-4eed-a385-082ee9c6eb3e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{0661ef6a-4f96-46f2-ae84-c1a0fc4bb075}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="VirBox">
+      <UniqueIdentifier>{206c52da-296f-4b2f-8f2f-be318258548b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Auxiliary">
+      <UniqueIdentifier>{4a0898a2-4710-4472-8e6b-d35a1a688443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sentinel">
+      <UniqueIdentifier>{6b88323c-c3cb-42f4-97dc-efd45a6a8357}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SoftWareBaseInfo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumLib_AS.h">
+      <Filter>Auxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="VirBox\VirBoxChecker.h">
+      <Filter>VirBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\SentinelHASPCpp\include\hasp_api.h">
+      <Filter>Sentinel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\SentinelHASPCpp\include\hasp_api_cpp.h">
+      <Filter>Sentinel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\SentinelHASPCpp\include\hasp_api_cpp_.h">
+      <Filter>Sentinel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\SentinelHASPCpp\include\haspdiag.h">
+      <Filter>Sentinel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\SentinelHASPCpp\include\resource.h">
+      <Filter>Sentinel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\SentinelHASPCpp\include\vendor_code.h">
+      <Filter>Sentinel</Filter>
+    </ClInclude>
+    <ClInclude Include="Auxiliary_AS.h">
+      <Filter>Auxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedObject_AS.h">
+      <Filter>Auxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitClipboardText.h">
+      <Filter>Auxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="StHandle_AS.hpp">
+      <Filter>Auxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="ASManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UpDateInfo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SoftWareBaseInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumLib_AS.cpp">
+      <Filter>Auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="VirBox\VirBoxVerify.cpp">
+      <Filter>VirBox</Filter>
+    </ClCompile>
+    <ClCompile Include="About_Dlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Debug\moc_About_Dlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Release\moc_About_Dlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="VirBox\VirBoxChecker.cpp">
+      <Filter>VirBox</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftWareVerify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Debug\moc_SoftWareVerify.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Release\moc_SoftWareVerify.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspbase.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspdiag.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspenc64.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspfeature.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspfile.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\hasphandle.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\hasphasp.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspimpl.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspinfo.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\hasplegacy.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\hasplock.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspmain.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspmap.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\hasptime.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\SentinelHASPCpp\include\haspversion.cpp">
+      <Filter>Sentinel</Filter>
+    </ClCompile>
+    <ClCompile Include="ASTableWgt.cpp">
+      <Filter>Auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Debug\moc_ASTableWgt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Release\moc_ASTableWgt.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Auxiliary_AS.cpp">
+      <Filter>Auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedObject_AS.cpp">
+      <Filter>Auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitClipboardText.cpp">
+      <Filter>Auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="TextEditDelegate.cpp">
+      <Filter>Auxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Debug\moc_TextEditDelegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Release\moc_TextEditDelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ASManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UpDateInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UpDateInfo_Dlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Debug\moc_UpDateInfo_Dlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\Release\moc_UpDateInfo_Dlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="VirBox\VirBoxVerify.h">
+      <Filter>VirBox</Filter>
+    </CustomBuild>
+    <CustomBuild Include="About_Dlg.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SoftWareVerify.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ASTableWgt.h">
+      <Filter>Auxiliary</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TextEditDelegate.h">
+      <Filter>Auxiliary</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UpDateInfo_Dlg.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

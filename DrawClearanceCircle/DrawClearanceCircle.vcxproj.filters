@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="DrawClearanceCircle">
+      <UniqueIdentifier>{87a58e8e-5e37-4052-a2b6-3886b2f9f1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DrawClearanceCircle\CADAutility">
+      <UniqueIdentifier>{24e26ee6-29f8-42e0-a146-750c806aa9ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="data\DrawClearanceCircle.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cmd_purge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircleModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ex2LineAngularDimension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ex3PointAngularDimensionPtr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExAlignedDimension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExArcDimension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExArrayEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExBlockIcon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExCenterObjects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExCircle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExClipUnderlayCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExCommandsUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExDiametricDimension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExDigitalSignatureCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExExportLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExFileCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExIsolate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExMLeader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExRadialDimension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExSphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExTransform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoMarkPosition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ExSelectionUtils.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExCreateArcCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExTxtExp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExInserRaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\DrawStraight_I.cpp">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\DrawStraight_VL.cpp">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\DrawCl.cpp">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\DrawMaxAngle_I.cpp">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\CreateEnt.cpp">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\DrawAutility.cpp">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\CADEnumLib.cpp">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\SingleCell.cpp">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\SmartCADTable.cpp">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\CADConsts.cpp">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\DrawMaxAngle_V.cpp">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawClearanceCircle\DrawMaxAngle.cpp">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DbCmdDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircleModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExClipUnderlayCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExCommandsUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ExSelectionUtils.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\DrawStraight_I.h">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\DrawStraight_VL.h">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\DrawCl.h">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\DrawMaxAngle_I.h">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\CreateEnt.h">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\DrawAutility.h">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\CADEnumLib.h">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\SingleCell.h">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\SmartCADTable.h">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\CADConsts.h">
+      <Filter>DrawClearanceCircle\CADAutility</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\DrawMaxAngle_V.h">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawClearanceCircle\DrawMaxAngle.h">
+      <Filter>DrawClearanceCircle</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

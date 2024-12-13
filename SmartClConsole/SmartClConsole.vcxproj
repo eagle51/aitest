@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{84A83117-D3BC-32A7-9349-13D997CF3422}</ProjectGuid>
+    <RootNamespace>OdaQtConsole</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>SmartClConsole</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>\exe\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>build\OdaQtConsole\</IntermediateDirectory>
+    <PrimaryOutput>OdaQtConsole</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>\exe\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>build\OdaQtConsole\</IntermediateDirectory>
+    <PrimaryOutput>OdaQtConsole</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\temp\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SmartClConsole_19.12_12</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\temp\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SmartClConsole_19.12_12</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.tx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.tx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)..\include\Drawing\Qt\Common;$(SolutionDir)..\include\Kernel\Common;$(SolutionDir)..\include\Drawing\Common;$(SolutionDir)..\include\Kernel\Include;$(SolutionDir)..\include\Drawing\Include;$(SolutionDir)..\include\Kernel\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Editor;$(SolutionDir)..\include\Drawing\Extensions\DbConstraints;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;$(SolutionDir)..\temp\build\SmartClConsole;$(SolutionDir)..\temp\GeneratedFiles;$(SolutionDir)..\3rd\JSON_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)\build\OdaQtConsole\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_SYS_VAR_PE_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>TD_ExamplesCommon.lib;TD_DrawingsExamplesCommon.lib;TD_Alloc.lib;TD_DbRoot.lib;TD_Root.lib;TD_Db.lib;TD_DbCore.lib;TD_DbIO.lib;TD_DbEntities.lib;SCENEOE.lib;ACCAMERA.lib;RText.lib;ATEXT.lib;ISM.lib;WipeOut.lib;DbConstraints.lib;TD_Ge.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;SmartClearance_Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)..\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)SmartClConsole_19.12_12.tx</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_SYS_VAR_PE_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;QT5;NOMINMAX;UNICODE;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)..\include\Drawing\Qt\Common;$(SolutionDir)..\include\Kernel\Common;$(SolutionDir)..\include\Drawing\Common;$(SolutionDir)..\include\Kernel\Include;$(SolutionDir)..\include\Drawing\Include;$(SolutionDir)..\include\Kernel\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Editor;$(SolutionDir)..\include\Drawing\Extensions\DbConstraints;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;$(SolutionDir)..\temp\build\SmartClConsole;$(SolutionDir)..\temp\GeneratedFiles;$(SolutionDir)..\3rd\JSON_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)\build\OdaQtConsole\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_SYS_VAR_PE_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>TD_ExamplesCommond.lib;TD_DrawingsExamplesCommond.lib;TD_Alloc.lib;TD_DbRoot.lib;TD_Root.lib;TD_Db.lib;TD_DbCore.lib;TD_DbIO.lib;TD_DbEntities.lib;SCENEOE.lib;ACCAMERA.lib;RText.lib;ATEXT.lib;ISM.lib;WipeOut.lib;DbConstraints.lib;TD_Ge.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;SmartClearance_Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)..\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)SmartClConsole_19.12_12.tx</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_SYS_VAR_PE_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\temp\build\SmartClConsole\moc_OdqCommandLineEdit.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClConsole\moc_OdqConsole.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClConsole\moc_OdqConsoleTab.cpp" />
+    <ClCompile Include="CommandContextImpl.cpp" />
+    <ClCompile Include="ConsoleAppLoadCommand.cpp" />
+    <ClCompile Include="ConsoleCommands.cpp" />
+    <ClCompile Include="ConsoleModule.cpp" />
+    <ClCompile Include="ConsoleReactors.cpp" />
+    <ClCompile Include="..\..\include\Drawing\Editor\ExGripManager.cpp" />
+    <ClCompile Include="..\..\include\Drawing\Editor\OSnapManager.cpp" />
+    <ClCompile Include="OdqAudit.cpp" />
+    <ClCompile Include="OdqCommandLineEdit.cpp" />
+    <ClCompile Include="OdqConsole.cpp" />
+    <ClCompile Include="OdqConsoleTab.cpp" />
+    <ClCompile Include="OdqDragTracker.cpp" />
+    <ClCompile Include="OdqGripManager.cpp" />
+    <ClCompile Include="OdqSnapManager.cpp" />
+    <ClCompile Include="SysVarPEImpl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommandContextImpl.h" />
+    <ClInclude Include="ConsoleCommands.h" />
+    <ClInclude Include="ConsoleModule.h" />
+    <ClInclude Include="ConsoleReactors.h" />
+    <ClInclude Include="..\..\include\Drawing\Extensions\DbConstraints\DbAssocManager.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\ExAppServices.h" />
+    <ClInclude Include="..\..\include\Kernel\Common\ExDynamicModule.h" />
+    <ClInclude Include="..\..\include\Drawing\Editor\ExGripManager.h" />
+    <ClInclude Include="..\..\include\Drawing\Editor\OSnapManager.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqAudit.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqClipData.h" />
+    <CustomBuild Include="OdqCommandLineEdit.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_SYS_VAR_PE_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL  "-I." "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Extensions\DbConstraints" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I$(SolutionDir)..\temp\build\SmartClConsole" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqCommandLineEdit.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_SYS_VAR_PE_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL  "-I." "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Extensions\DbConstraints" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I$(SolutionDir)..\temp\build\SmartClConsole" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqCommandLineEdit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="OdqConsole.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_SYS_VAR_PE_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL  "-I." "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Extensions\DbConstraints" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I$(SolutionDir)..\temp\build\SmartClConsole" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqConsole.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_SYS_VAR_PE_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL  "-I." "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Extensions\DbConstraints" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I$(SolutionDir)..\temp\build\SmartClConsole" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqConsole.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="OdqConsoleTab.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_SYS_VAR_PE_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL  "-I." "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Extensions\DbConstraints" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I$(SolutionDir)..\temp\build\SmartClConsole" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqConsoleTab.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_SYS_VAR_PE_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL  "-I." "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Extensions\DbConstraints" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I$(SolutionDir)..\temp\build\SmartClConsole" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqConsoleTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClConsole\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="OdqDragTracker.h" />
+    <ClInclude Include="OdqGripManager.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqInterfaces.h" />
+    <ClInclude Include="OdqSnapManager.h" />
+    <ClInclude Include="OdqSysVarDefs.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqTdSaveAsFilters.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\PropServices.h" />
+    <ClInclude Include="..\..\include\Drawing\Common\SysVarPE.h" />
+    <ClInclude Include="SysVarPEImpl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="data\OdqConsole.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\..\..\temp\build\SmartClConsole" UicDir=".\..\..\temp\GeneratedFiles" RccDir=".\..\..\temp\GeneratedFiles" Qt5Version_x0020_Win32="msvc2013" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

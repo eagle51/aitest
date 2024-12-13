@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{356C75E8-D3BE-411C-9446-25350B97252B}</ProjectGuid>
+    <RootNamespace>DrawClearanceCircle</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>DrawClearanceCircle</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>\exe\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>build\DrawClearanceCircle\</IntermediateDirectory>
+    <PrimaryOutput>DrawClearanceCircle</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>\exe\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>build\DrawClearanceCircle\</IntermediateDirectory>
+    <PrimaryOutput>DrawClearanceCircle</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\temp\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">DrawClearanceCircle_19.12_12</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    </LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\temp\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">DrawClearanceCircle_19.12_12</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.tx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.tx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)..\include\Drawing\Qt\Common;$(SolutionDir)..\include\Kernel\Common;$(SolutionDir)..\include\Drawing\Common;$(SolutionDir)..\include\Kernel\Include;$(SolutionDir)..\include\Drawing\Include;$(SolutionDir)..\include\Kernel\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Editor;$(SolutionDir)..\include\Drawing\Extensions\DbConstraints;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;$(SolutionDir)..\temp\GeneratedFiles;$(SolutionDir)..\temp\build\DrawClearanceCircle;$(SolutionDir)..\include\SmartCl_Core;$(SolutionDir)..\include\SmartCl_Core\Load;$(SolutionDir)..\3rd\JSON_Src;$(SolutionDir)\AboutSoftWare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)\build\DrawClearanceCircle\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_SYS_VAR_PE_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>TD_ExamplesCommon.lib;TD_DrawingsExamplesCommon.lib;TD_Alloc.lib;TD_DbRoot.lib;TD_Root.lib;TD_Db.lib;TD_DbCore.lib;TD_DbIO.lib;TD_DbEntities.lib;SCENEOE.lib;ACCAMERA.lib;RText.lib;ATEXT.lib;ISM.lib;WipeOut.lib;DbConstraints.lib;AcIdViewObj.lib;TD_Ge.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;SmartClearance_Core.lib;AboutSoftWare.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)..\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)DrawClearanceCircle_19.12_12.tx</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_SYS_VAR_PE_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)..\include\Drawing\Qt\Common;$(SolutionDir)..\include\Kernel\Common;$(SolutionDir)..\include\Drawing\Common;$(SolutionDir)..\include\Kernel\Include;$(SolutionDir)..\include\Drawing\Include;$(SolutionDir)..\include\Kernel\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Editor;$(SolutionDir)..\include\Drawing\Extensions\DbConstraints;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;$(SolutionDir)..\temp\GeneratedFiles;$(SolutionDir)..\temp\build\DrawClearanceCircle;$(SolutionDir)..\include\SmartCl_Core;$(SolutionDir)..\include\SmartCl_Core\Load;$(SolutionDir)..\3rd\JSON_Src;$(SolutionDir)\AboutSoftWare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)\build\DrawClearanceCircle\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_SYS_VAR_PE_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>TD_ExamplesCommond.lib;TD_DrawingsExamplesCommond.lib;TD_Alloc.lib;TD_DbRoot.lib;TD_Root.lib;TD_Db.lib;TD_Gi.lib;TD_DbCore.lib;TD_DbIO.lib;TD_DbEntities.lib;SCENEOE.lib;ACCAMERA.lib;RText.lib;ATEXT.lib;ISM.lib;WipeOut.lib;DbConstraints.lib;AcIdViewObj.lib;TD_Ge.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;SmartClearance_Cored.lib;AboutSoftWare.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)..\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)DrawClearanceCircle_19.12_12.tx</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_SYS_VAR_PE_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="data\DrawClearanceCircle.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cmd_purge.cpp" />
+    <ClCompile Include="Common\ExSelectionUtils.cpp" />
+    <ClCompile Include="DrawClearanceCircle\CADConsts.cpp" />
+    <ClCompile Include="DrawClearanceCircle\CADEnumLib.cpp" />
+    <ClCompile Include="DrawClearanceCircle\CreateEnt.cpp" />
+    <ClCompile Include="DrawClearanceCircle\DrawAutility.cpp" />
+    <ClCompile Include="DrawClearanceCircle\DrawCl.cpp" />
+    <ClCompile Include="DrawClearanceCircle\DrawMaxAngle.cpp" />
+    <ClCompile Include="DrawClearanceCircle\DrawMaxAngle_I.cpp" />
+    <ClCompile Include="DrawClearanceCircle\DrawMaxAngle_V.cpp" />
+    <ClCompile Include="DrawClearanceCircle\DrawStraight_I.cpp" />
+    <ClCompile Include="DrawClearanceCircle\DrawStraight_VL.cpp" />
+    <ClCompile Include="DrawClearanceCircle\SingleCell.cpp" />
+    <ClCompile Include="DrawClearanceCircle\SmartCADTable.cpp" />
+    <ClCompile Include="ExCreateArcCommand.cpp" />
+    <ClCompile Include="DrawClearanceCircleModule.cpp" />
+    <ClCompile Include="Ex2LineAngularDimension.cpp" />
+    <ClCompile Include="Ex3PointAngularDimensionPtr.cpp" />
+    <ClCompile Include="ExAlignedDimension.cpp" />
+    <ClCompile Include="ExArcDimension.cpp" />
+    <ClCompile Include="ExArray.cpp" />
+    <ClCompile Include="ExArrayEdit.cpp" />
+    <ClCompile Include="ExBlockIcon.cpp" />
+    <ClCompile Include="ExBox.cpp" />
+    <ClCompile Include="ExCenterObjects.cpp" />
+    <ClCompile Include="ExCircle.cpp" />
+    <ClCompile Include="ExClipUnderlayCommand.cpp" />
+    <ClCompile Include="ExCommandsUtils.cpp" />
+    <ClCompile Include="ExDiametricDimension.cpp" />
+    <ClCompile Include="ExDigitalSignatureCommands.cpp" />
+    <ClCompile Include="ExExportLayout.cpp" />
+    <ClCompile Include="ExFileCommands.cpp" />
+    <ClCompile Include="ExInserRaster.cpp" />
+    <ClCompile Include="ExIsolate.cpp" />
+    <ClCompile Include="ExLine.cpp" />
+    <ClCompile Include="ExMLeader.cpp" />
+    <ClCompile Include="ExRadialDimension.cpp" />
+    <ClCompile Include="ExSphere.cpp" />
+    <ClCompile Include="ExText.cpp" />
+    <ClCompile Include="ExTransform.cpp" />
+    <ClCompile Include="ExTxtExp.cpp" />
+    <ClCompile Include="GeoMarkPosition.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\ExSelectionUtils.h" />
+    <ClInclude Include="DbCmdDef.h" />
+    <ClInclude Include="DrawClearanceCircleModule.h" />
+    <ClInclude Include="DrawClearanceCircle\CADConsts.h" />
+    <ClInclude Include="DrawClearanceCircle\CADEnumLib.h" />
+    <ClInclude Include="DrawClearanceCircle\CreateEnt.h" />
+    <ClInclude Include="DrawClearanceCircle\DrawAutility.h" />
+    <ClInclude Include="DrawClearanceCircle\DrawCl.h" />
+    <ClInclude Include="DrawClearanceCircle\DrawMaxAngle.h" />
+    <ClInclude Include="DrawClearanceCircle\DrawMaxAngle_I.h" />
+    <ClInclude Include="DrawClearanceCircle\DrawMaxAngle_V.h" />
+    <ClInclude Include="DrawClearanceCircle\DrawStraight_I.h" />
+    <ClInclude Include="DrawClearanceCircle\DrawStraight_VL.h" />
+    <ClInclude Include="DrawClearanceCircle\SingleCell.h" />
+    <ClInclude Include="DrawClearanceCircle\SmartCADTable.h" />
+    <ClInclude Include="ExClipUnderlayCommand.h" />
+    <ClInclude Include="ExCommandsUtils.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\..\..\temp\build\DrawClearanceCircle" UicDir=".\..\..\temp\GeneratedFiles" RccDir=".\..\..\temp\GeneratedFiles" Qt5Version_x0020_Win32="msvc2013" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

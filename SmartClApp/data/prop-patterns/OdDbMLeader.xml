@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Properties>
+  <Property Name="3D" Path="" SkipBase="true" />
+  <Property Name="Misc" Path="" />
+    <Property GrCode="40" Name="OverallScale" VisibleName="Overall scale" Path="Misc" Type="double" Value="1.0000" Min="0.0" />
+    <!-- Property GrCode="340" Name="MultileaderStyle" VisibleName="Multileader style" Path="Misc" Type="combo" Value="$(STYLE,MLEADER,%1)" / -->
+    <Property GrCode="293" Name="Annotative" Path="Misc" Type="combo" Value="$(YESNO,%1)" />
+    <!-- Property GrCode="45" Name="AnnotativeScale" VisibleName="Annotative scale" Path="General" Type="double" Value="1.0000" Min="0.0" / -->
+</Properties>

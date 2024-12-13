@@ -1,0 +1,65 @@
+
+
+QPushButton
+{
+   border-radius: 5px;
+   min-height:15px;
+   border: 2px groove gray;
+   border-style: outset;
+   padding:4px;
+}
+QPushButton:hover
+{
+	
+}
+QPushButton:pressed
+{
+  
+   border-style: inset;
+}
+QHeaderView:section
+{
+  background-color:rgb(245, 245, 245);
+  border:0px;
+  border-bottom:1px solid #E0DDDC;
+  border-right:1px solid #E0DDDC;
+}
+QHeaderView
+{
+    border:1px;
+	min-height:30px;
+}
+
+QComboBox
+{
+   border:1px solid #E0DDDC;
+   font-family:Microsoft YaHei; 
+   font-size:12px;
+}
+
+QLineEdit
+{
+    font-family:Microsoft YaHei; 
+    background-color:white;
+	border-width: 1px;
+	height:20px;
+}
+QTabBar::tab:!enabled
+{
+   background-color:gray;
+    border-style: inset;
+}
+QScrollBar
+{
+  border-radius: 5px;
+}
+QStatusBar
+ {
+   font: 75 16pt ;
+   font-size:15px;
+   color:rgb(255, 0, 0);
+}
+QLabel
+{
+   font-family:Microsoft YaHei; 
+}

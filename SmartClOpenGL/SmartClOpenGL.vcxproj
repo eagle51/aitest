@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B9008A7C-57FC-37E9-BA36-3E3302869E6E}</ProjectGuid>
+    <RootNamespace>OdaQtOpenGL</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>SmartClOpenGL</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>\exe\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>build\OdaQtOpenGL\</IntermediateDirectory>
+    <PrimaryOutput>OdaQtOpenGL</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>\exe\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>build\OdaQtOpenGL\</IntermediateDirectory>
+    <PrimaryOutput>OdaQtOpenGL</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\temp\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SmartClOpenGL_19.12_12</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.txv</TargetExt>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\temp\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SmartClOpenGL_19.12_12</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.txv</TargetExt>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)..\include\Drawing\Qt\Common;$(SolutionDir)..\include\Kernel\Common;$(SolutionDir)..\include\Drawing\Common;$(SolutionDir)..\include\Kernel\Include;$(SolutionDir)..\include\Drawing\Include;$(SolutionDir)..\include\Kernel\Extensions\ExRender;$(SolutionDir)..\include\Kernel\Extensions\ExRender\OpenGL;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;.\build\SmartClOpenGL;$(QTDIR)\mkspecs\win32-msvc2013;$(SolutionDir)..\include\temp\build\SmartClOpenGL;$(SolutionDir)..\temp\build\SmartClOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)\build\OdaQtOpenGL\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;TD_USE_QT_LIB;_TOOLKIT_IN_DLL_;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>TD_Alloc.lib;TD_Ge.lib;TD_Gi.lib;TD_Gs.lib;TD_DbRoot.lib;TD_Root.lib;$(QTDIR)\lib\Qt5OpenGL.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;glut.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)..\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)SmartClOpenGL_19.12_12.txv</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT5;NOMINMAX;UNICODE;_UNICODE;TD_CLIENT_BUILD;TD_USE_QT_LIB;_TOOLKIT_IN_DLL_;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)..\include\Drawing\Qt\Common;$(SolutionDir)..\include\Kernel\Common;$(SolutionDir)..\include\Drawing\Common;$(SolutionDir)..\include\Kernel\Include;$(SolutionDir)..\include\Drawing\Include;$(SolutionDir)..\include\Kernel\Extensions\ExRender;$(SolutionDir)..\include\Kernel\Extensions\ExRender\OpenGL;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;.\build\SmartClOpenGL;$(QTDIR)\mkspecs\win32-msvc2013;$(SolutionDir)..\include\temp\build\SmartClOpenGL;$(SolutionDir)..\temp\build\SmartClOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)\build\OdaQtOpenGL\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT5;NOMINMAX;_DEBUG;UNICODE;_UNICODE;TD_CLIENT_BUILD;TD_USE_QT_LIB;_TOOLKIT_IN_DLL_;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>TD_Alloc.lib;TD_Ge.lib;TD_Gi.lib;TD_Gs.lib;TD_DbRoot.lib;TD_Root.lib;TD_OpenGL.lib;$(QTDIR)\lib\Qt5OpenGLd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;glut.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)..\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)SmartClOpenGL_19.12_12.txv</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT5;NOMINMAX;_DEBUG;UNICODE;_UNICODE;TD_CLIENT_BUILD;TD_USE_QT_LIB;_TOOLKIT_IN_DLL_;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExRender\CommonDeviceProps.cpp" />
+    <ClCompile Include="ExGsQtDevice.cpp" />
+    <ClCompile Include="ExGsQtVectorizeDevice.cpp" />
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileReader.cpp" />
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileStream.cpp" />
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileWriter.cpp" />
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\GsOpenGLStreamVectorizer.cpp" />
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\GsOpenGLVectorizer.cpp" />
+    <ClCompile Include="OpenGLModule.cpp" />
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExRender\TtfFontsCache.cpp" />
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExRender\mono_dxt1_compressor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\CommonDeviceProps.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\ExGsHelpers.h" />
+    <ClInclude Include="ExGsQtDevice.h" />
+    <ClInclude Include="ExGsQtScreenDevice.h" />
+    <ClInclude Include="ExGsQtVectorizeDevice.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileReader.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileStream.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileWriter.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\GsOpenGLDefs.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\GsOpenGLStreamVectorizer.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\GsOpenGLVectorizer.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\MetafileTransformStack.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\OpenGLExtensions.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\OpenGLMetafileStream.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\OpenGL\OpenGL_ES.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\TtfFontsCache.h" />
+    <ClInclude Include="..\..\include\Kernel\Extensions\ExRender\mono_dxt1_compressor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="data\OdqOpenGL.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\..\..\temp\build\SmartClOpenGL" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_Win32="msvc2013" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

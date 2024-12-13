@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCFB7818-9E89-364B-826B-FCEC44996FA4}</ProjectGuid>
+    <RootNamespace>OdaQtApp</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>SmartClApp</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>\exe\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>build\SmartClApp\</IntermediateDirectory>
+    <PrimaryOutput>OdaQtApp</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>\exe\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>build\OdaQtApp\</IntermediateDirectory>
+    <PrimaryOutput>OdaQtApp</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\temp\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SmartClearance</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\temp\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SmartClearance</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)\SmartClApp\subFormFiles;$(SolutionDir)\SmartClApp\mainFormFiles;$(SolutionDir)\AboutSoftWare;$(SolutionDir)..\include\Drawing\Qt\Common;$(SolutionDir)..\include\Kernel\Common;$(SolutionDir)..\include\Drawing\Common;$(SolutionDir)..\include\Kernel\Include;$(SolutionDir)..\include\Drawing\Editor;$(SolutionDir)..\include\Drawing\Include;$(SolutionDir)..\include\Kernel\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Extensions\ExServices;$(SolutionDir)..\include\Kernel\Extensions\ExRender;$(SolutionDir)..\include\SmartCl_Core;$(SolutionDir)..\include\SmartCl_Core\Load;$(SolutionDir)..\temp\build\SmartClApp;$(SolutionDir)..\temp\GeneratedFiles;$(SolutionDir)..\3rd\JSON_Src;$(SolutionDir)..\3rd\activation;$(QTDIR)\include;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtNetwork;$(QTDIR)\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)\build\OdaQtApp\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_QT_NO_CAUSTIC_OPENRL;ODA_QT_NO_QZIP;QT5;NOMINMAX;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;NDEBUG;QT_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;shell32.lib;TD_ExamplesCommon.lib;TD_DrawingsExamplesCommon.lib;TD_Alloc.lib;TD_DbRoot.lib;TD_Root.lib;TD_Db.lib;TD_DbCore.lib;TD_DbIO.lib;TD_DbEntities.lib;SCENEOE.lib;ACCAMERA.lib;RText.lib;ATEXT.lib;ISM.lib;WipeOut.lib;TD_Ge.lib;TD_Gi.lib;TD_SpatialIndex.lib;TD_Key.lib;crypt32.lib;$(QTDIR)\lib\Qt5PrintSupport.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Xml.lib;$(QTDIR)\lib\Qt5Core.lib;SmartClearance_Core.lib;AboutSoftWare.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)..\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)SmartClearance.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_QT_NO_CAUSTIC_OPENRL;ODA_QT_NO_QZIP;QT5;NOMINMAX;UNICODE;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)\SmartClApp\subFormFiles;$(SolutionDir)\SmartClApp\mainFormFiles;$(SolutionDir)\AboutSoftWare;$(SolutionDir)..\include\Drawing\Qt\Common;$(SolutionDir)..\include\Kernel\Common;$(SolutionDir)..\include\Drawing\Common;$(SolutionDir)..\include\Kernel\Include;$(SolutionDir)..\include\Drawing\Editor;$(SolutionDir)..\include\Drawing\Include;$(SolutionDir)..\include\Kernel\Extensions\ExServices;$(SolutionDir)..\include\Drawing\Extensions\ExServices;$(SolutionDir)..\include\Kernel\Extensions\ExRender;$(SolutionDir)..\include\SmartCl_Core;$(SolutionDir)..\include\SmartCl_Core\Load;$(SolutionDir)..\3rd\JSON_Src;$(SolutionDir)..\3rd\activation;$(SolutionDir)..\temp\build\SmartClApp;$(SolutionDir)..\temp\GeneratedFiles;$(QTDIR)\include;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtNetwork;$(QTDIR)\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)\build\OdaQtApp\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_QT_NO_CAUSTIC_OPENRL;ODA_QT_NO_QZIP;QT5;NOMINMAX;_DEBUG;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;QT_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;shell32.lib;TD_ExamplesCommond.lib;TD_DrawingsExamplesCommond.lib;TD_Alloc.lib;TD_DbRoot.lib;TD_Root.lib;TD_Db.lib;TD_DbCore.lib;TD_DbIO.lib;TD_DbEntities.lib;SCENEOE.lib;ACCAMERA.lib;RText.lib;ATEXT.lib;ISM.lib;WipeOut.lib;TD_Ge.lib;TD_Gi.lib;TD_SpatialIndex.lib;TD_Keyd.lib;crypt32.lib;$(QTDIR)\lib\Qt5PrintSupportd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Xmld.lib;$(QTDIR)\lib\Qt5Cored.lib;SmartClearance_Cored.lib;AboutSoftWare.lib;Qt5Networkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)..\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)SmartClearance.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;ODA_EX_APP_SERVICES_UNLINKED_RXINIT;ODA_PROP_SERVICES_UNLINKED_RXINIT;ODA_QT_NO_CAUSTIC_OPENRL;ODA_QT_NO_QZIP;QT5;NOMINMAX;_DEBUG;UNICODE;_UNICODE;TD_CLIENT_BUILD;_TOOLKIT_IN_DLL_;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_AddClByType_Dlg.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_ClListWidget.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_HHeaderItemDelegate.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_HHeaderModel.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_HHeaderView.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_NewProject_Dlg.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqApplication.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqAppProps.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqCustomization.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqMainWindow.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqPlotDialog.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqPropertyDialog.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqPropertyPalette.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_SettingsDlg.cpp" />
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_VersionUpdateDialog.cpp" />
+    <ClCompile Include="..\..\temp\GeneratedFiles\qrc_data.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AppCommands.cpp" />
+    <ClCompile Include="AppModule.cpp" />
+    <ClCompile Include="AppPlotCommands.cpp" />
+    <ClCompile Include="ExAppServicesImpl.cpp" />
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExServices\ExSystemServices.cpp" />
+    <ClCompile Include="LeakDetector.cpp" />
+    <ClCompile Include="mainFormFiles\AddClByType_Dlg.cpp" />
+    <ClCompile Include="mainFormFiles\ClListWidget.cpp" />
+    <ClCompile Include="mainFormFiles\NewProject_Dlg.cpp" />
+    <ClCompile Include="mainFormFiles\VersionUpdateDialog.cpp" />
+    <ClCompile Include="OdqAppProps.cpp" />
+    <ClCompile Include="OdqApplication.cpp" />
+    <ClCompile Include="OdqCustomization.cpp" />
+    <ClCompile Include="OdqMainWindow.cpp" />
+    <ClCompile Include="OdqPlotDialog.cpp" />
+    <ClCompile Include="OdqPropertyDialog.cpp" />
+    <ClCompile Include="OdqPropertyPalette.cpp" />
+    <ClCompile Include="OdqXmlUtils.cpp" />
+    <ClCompile Include="SettingsDlg.cpp" />
+    <ClCompile Include="PropServicesImpl.cpp" />
+    <ClCompile Include="Services.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="UIAutilityFiles\HHeaderItemDelegate.cpp" />
+    <ClCompile Include="UIAutilityFiles\HHeaderModel.cpp" />
+    <ClCompile Include="UIAutilityFiles\HHeaderView.cpp" />
+    <ClCompile Include="UIAutilityFiles\UIAutility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppCommands.h" />
+    <ClInclude Include="AppModule.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\ExAppServices.h" />
+    <CustomBuild Include="mainFormFiles\AddClByType_Dlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AddClByType_Dlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AddClByType_Dlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+    </CustomBuild>
+    <CustomBuild Include="mainFormFiles\NewProject_Dlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing NewProject_Dlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing NewProject_Dlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+    </CustomBuild>
+    <ClInclude Include="LeakDetector .h" />
+    <CustomBuild Include="mainFormFiles\VersionUpdateDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+    </CustomBuild>
+    <CustomBuild Include="SettingsDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SettingsDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SettingsDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+    </CustomBuild>
+    <ClInclude Include="UIAutilityFiles\UIAutility.h" />
+    <CustomBuild Include="UIAutilityFiles\HHeaderView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing HHeaderView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing HHeaderView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\HHeaderModel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing HHeaderModel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing HHeaderModel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\HHeaderItemDelegate.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing HHeaderItemDelegate.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing HHeaderItemDelegate.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+    </CustomBuild>
+    <ClInclude Include="ExAppServicesImpl.h" />
+    <ClInclude Include="..\..\include\Kernel\Common\ExDynamicModule.h" />
+    <CustomBuild Include="OdqAppProps.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqAppProps.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqAppProps.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="OdqApplication.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqApplication.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqApplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqAudit.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqClipData.h" />
+    <CustomBuild Include="OdqCustomization.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqCustomization.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqCustomization.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqInterfaces.h" />
+    <CustomBuild Include="OdqMainWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqMainWindow.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqMainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="OdqPlotDialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqPlotDialog.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqPlotDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="OdqPropertyDialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqPropertyDialog.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqPropertyDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="OdqPropertyPalette.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OdqPropertyPalette.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OdqPropertyPalette.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="mainFormFiles\ClListWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ClListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_DEBUG -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ClListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\build\SmartClApp\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\temp\build\SmartClApp\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DODA_EX_APP_SERVICES_UNLINKED_RXINIT -DODA_PROP_SERVICES_UNLINKED_RXINIT -DODA_QT_NO_CAUSTIC_OPENRL -DODA_QT_NO_QZIP -DQT5 -DNOMINMAX -D_UNICODE -DTD_CLIENT_BUILD -D_TOOLKIT_IN_DLL_ -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -DNDEBUG -DQT_NETWORK_LIB  "-I." "-I$(SolutionDir)\SmartClApp\subFormFiles" "-I$(SolutionDir)\SmartClApp\mainFormFiles" "-I$(SolutionDir)\AboutSoftWare" "-I$(SolutionDir)..\include\Drawing\Qt\Common" "-I$(SolutionDir)..\include\Kernel\Common" "-I$(SolutionDir)..\include\Drawing\Common" "-I$(SolutionDir)..\include\Kernel\Include" "-I$(SolutionDir)..\include\Drawing\Editor" "-I$(SolutionDir)..\include\Drawing\Include" "-I$(SolutionDir)..\include\Kernel\Extensions\ExServices" "-I$(SolutionDir)..\include\Drawing\Extensions\ExServices" "-I$(SolutionDir)..\include\Kernel\Extensions\ExRender" "-I$(SolutionDir)..\include\SmartCl_Core" "-I$(SolutionDir)..\include\SmartCl_Core\Load" "-I$(SolutionDir)..\temp\build\SmartClApp" "-I$(SolutionDir)..\temp\GeneratedFiles" "-I$(SolutionDir)..\3rd\JSON_Src" "-I$(SolutionDir)..\3rd\activation" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+    </CustomBuild>
+    <ClInclude Include="OdqXmlUtils.h" />
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\PropServices.h" />
+    <ClInclude Include="PropServicesImpl.h" />
+    <ClInclude Include="ResBufPropValueBaseConvertors.h" />
+    <ClInclude Include="Services.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Copy_Dlg" />
+    <None Include="data\images\Dark.qss" />
+    <None Include="data\images\Light.qss" />
+    <None Include="data\images\visual_style\2d_wireframe.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\visual_style\3d_hidden.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\visual_style\3d_wireframe.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\cui\ExCommands.cui">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\White.qss" />
+    <None Include="data\ODA-Based.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\prop-patterns\OdDbArc.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\prop-patterns\OdDbCircle.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\prop-patterns\OdDbEllipse.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\prop-patterns\OdDbEntity.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\prop-patterns\OdDbHatch.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\prop-patterns\OdDbLine.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\about.html">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\about_caustic.html">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\box.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\check\check_off.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\check\check_on.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\help\commands.html">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\rev\commit.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\visual_style\conceptual.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\cone.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\rev\create_branch.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\cylinder.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="data\data.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);.\data\odalogo.png;.\data\odalogofull.png;.\data\about.html;.\data\about_caustic.html;.\data\help\help.html;.\data\help\commands.html;.\data\help\developer.html;.\data\help\net-developer.html;.\data\cui\odq_menu_base.cui;.\data\cui\odq_toolbar_base.cui;.\data\cui\ExCommands.cui;.\data\cui\odq_toolbar_tstcmds_tx.cui;.\data\cui\odq_toolbar_tigdb_tx.cui;.\data\oda_qt_props.xml;.\data\oda_qt_props_caustic.xml;.\data\images\file_new.png;.\data\images\file_open.png;.\data\images\file_save.png;.\data\images\file_save_as.png;.\data\images\file_print.png;.\data\images\zoom_in.png;.\data\images\zoom_out.png;.\data\images\zoom_win.png;.\data\images\zoom_ext.png;.\data\images\view_orb.png;.\data\images\view_top.png;.\data\images\view_bottom.png;.\data\images\view_front.png;.\data\images\view_back.png;.\data\images\view_left.png;.\data\images\view_right.png;.\data\images\view_se.png;.\data\images\view_sw.png;.\data\images\view_ne.png;.\data\images\view_nw.png;.\data\images\hlp.png;.\data\images\undo.png;.\data\images\redo.png;.\data\images\regen.png;.\data\images\layer\layer_filter.png;.\data\images\layer\layer_filter_group.png;.\data\images\layer\layer_status.png;.\data\images\layer\layer_status_cur.png;.\data\images\layer\layer_off.png;.\data\images\layer\layer_on.png;.\data\images\layer\layer_freeze.png;.\data\images\layer\layer_unfreeze.png;.\data\images\layer\layer_lock.png;.\data\images\layer\layer_unlock.png;.\data\images\layer\layer_plot.png;.\data\images\layer\layer_unplot.png;.\data\images\plot\orientation_p.png;.\data\images\plot\orientation_l.png;.\data\images\plot\orientation_p_rev.png;.\data\images\plot\orientation_l_rev.png;.\data\images\plot\style.png;.\data\images\visual_style\2d_wireframe.png;.\data\images\visual_style\3d_wireframe.png;.\data\images\visual_style\3d_hidden.png;.\data\images\visual_style\realistic.png;.\data\images\visual_style\conceptual.png;.\data\images\orbit\orbit_constrained.png;.\data\images\orbit\orbit_free.png;.\data\images\orbit\orbit_continuous.png;.\data\images\property\tool_pickadd0.png;.\data\images\property\tool_pickadd1.png;.\data\images\property\tool_select.png;.\data\images\draw\line.png;.\data\images\draw\box.png;.\data\images\draw\cone.png;.\data\images\draw\cylinder.png;.\data\images\draw\sphere.png;.\data\images\draw\torus.png;.\data\images\draw\wedge.png;.\data\images\draw\polysolid.png;.\data\images\draw\pyramid.png;.\data\images\syswindows\syswindows_cascade.png;.\data\images\syswindows\syswindows_hor.png;.\data\images\syswindows\syswindows_vert.png;.\data\images\syswindows\syswindows_arrange.png;.\data\images\test\tst_undo.png;.\data\images\test\tst_redo.png;.\data\images\test\tst_commit.png;.\data\images\test\tst_update.png;.\data\images\check\check_on.png;.\data\images\check\check_off.png;.\data\images\rev\gear.png;.\data\images\rev\tool_rev.png;.\data\images\rev\commit.png;.\data\images\rev\create_branch.png;.\data\images\rev\merge.png;.\data\images\rev\refresh.png;.\data\images\rev\to_tig.png;.\data\prop-patterns\OdDbEntity.xml;.\data\prop-patterns\OdDbLine.xml;.\data\prop-patterns\OdDbCircle.xml;.\data\prop-patterns\OdDbArc.xml;.\data\prop-patterns\OdDbEllipse.xml;.\data\prop-patterns\OdDbHatch.xml;.\data\ODA-Based.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\..\..\temp\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\temp\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);.\data\odalogo.png;.\data\odalogofull.png;.\data\about.html;.\data\about_caustic.html;.\data\help\help.html;.\data\help\commands.html;.\data\help\developer.html;.\data\help\net-developer.html;.\data\cui\odq_menu_base.cui;.\data\cui\odq_toolbar_base.cui;.\data\cui\ExCommands.cui;.\data\cui\odq_toolbar_tstcmds_tx.cui;.\data\cui\odq_toolbar_tigdb_tx.cui;.\data\oda_qt_props.xml;.\data\oda_qt_props_caustic.xml;.\data\images\file_new.png;.\data\images\file_open.png;.\data\images\file_save.png;.\data\images\file_save_as.png;.\data\images\file_print.png;.\data\images\zoom_in.png;.\data\images\zoom_out.png;.\data\images\zoom_win.png;.\data\images\zoom_ext.png;.\data\images\view_orb.png;.\data\images\view_top.png;.\data\images\view_bottom.png;.\data\images\view_front.png;.\data\images\view_back.png;.\data\images\view_left.png;.\data\images\view_right.png;.\data\images\view_se.png;.\data\images\view_sw.png;.\data\images\view_ne.png;.\data\images\view_nw.png;.\data\images\hlp.png;.\data\images\undo.png;.\data\images\redo.png;.\data\images\regen.png;.\data\images\layer\layer_filter.png;.\data\images\layer\layer_filter_group.png;.\data\images\layer\layer_status.png;.\data\images\layer\layer_status_cur.png;.\data\images\layer\layer_off.png;.\data\images\layer\layer_on.png;.\data\images\layer\layer_freeze.png;.\data\images\layer\layer_unfreeze.png;.\data\images\layer\layer_lock.png;.\data\images\layer\layer_unlock.png;.\data\images\layer\layer_plot.png;.\data\images\layer\layer_unplot.png;.\data\images\plot\orientation_p.png;.\data\images\plot\orientation_l.png;.\data\images\plot\orientation_p_rev.png;.\data\images\plot\orientation_l_rev.png;.\data\images\plot\style.png;.\data\images\visual_style\2d_wireframe.png;.\data\images\visual_style\3d_wireframe.png;.\data\images\visual_style\3d_hidden.png;.\data\images\visual_style\realistic.png;.\data\images\visual_style\conceptual.png;.\data\images\orbit\orbit_constrained.png;.\data\images\orbit\orbit_free.png;.\data\images\orbit\orbit_continuous.png;.\data\images\property\tool_pickadd0.png;.\data\images\property\tool_pickadd1.png;.\data\images\property\tool_select.png;.\data\images\draw\line.png;.\data\images\draw\box.png;.\data\images\draw\cone.png;.\data\images\draw\cylinder.png;.\data\images\draw\sphere.png;.\data\images\draw\torus.png;.\data\images\draw\wedge.png;.\data\images\draw\polysolid.png;.\data\images\draw\pyramid.png;.\data\images\syswindows\syswindows_cascade.png;.\data\images\syswindows\syswindows_hor.png;.\data\images\syswindows\syswindows_vert.png;.\data\images\syswindows\syswindows_arrange.png;.\data\images\test\tst_undo.png;.\data\images\test\tst_redo.png;.\data\images\test\tst_commit.png;.\data\images\test\tst_update.png;.\data\images\check\check_on.png;.\data\images\check\check_off.png;.\data\images\rev\gear.png;.\data\images\rev\tool_rev.png;.\data\images\rev\commit.png;.\data\images\rev\create_branch.png;.\data\images\rev\merge.png;.\data\images\rev\refresh.png;.\data\images\rev\to_tig.png;.\data\prop-patterns\OdDbEntity.xml;.\data\prop-patterns\OdDbLine.xml;.\data\prop-patterns\OdDbCircle.xml;.\data\prop-patterns\OdDbArc.xml;.\data\prop-patterns\OdDbEllipse.xml;.\data\prop-patterns\OdDbHatch.xml;.\data\ODA-Based.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\..\..\temp\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\temp\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+    <None Include="data\help\developer.html">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\file_new.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\file_open.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\file_print.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\file_save.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\file_save_as.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\rev\gear.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\help\help.html">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\hlp.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_filter.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_filter_group.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_freeze.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_lock.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_off.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_on.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_plot.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_status.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_status_cur.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_unfreeze.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_unlock.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\layer\layer_unplot.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\line.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\rev\merge.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\help\net-developer.html">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\oda_qt_props.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\oda_qt_props_caustic.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\odalogo.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\odalogofull.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\cui\odq_menu_base.cui">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\cui\odq_toolbar_base.cui">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\cui\odq_toolbar_tigdb_tx.cui">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\cui\odq_toolbar_tstcmds_tx.cui">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\orbit\orbit_constrained.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\orbit\orbit_continuous.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\orbit\orbit_free.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\plot\orientation_l.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\plot\orientation_l_rev.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\plot\orientation_p.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\plot\orientation_p_rev.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\polysolid.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\pyramid.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\visual_style\realistic.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\redo.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\rev\refresh.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\regen.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\sphere.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\plot\style.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\syswindows\syswindows_arrange.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\syswindows\syswindows_cascade.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\syswindows\syswindows_hor.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\syswindows\syswindows_vert.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\rev\to_tig.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\property\tool_pickadd0.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\property\tool_pickadd1.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\rev\tool_rev.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\property\tool_select.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\torus.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\test\tst_commit.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\test\tst_redo.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\test\tst_undo.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\test\tst_update.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\undo.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_back.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_bottom.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_front.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_left.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_ne.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_nw.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_orb.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_right.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_se.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_sw.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\view_top.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\draw\wedge.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\zoom_ext.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\zoom_in.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\zoom_out.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="data\images\zoom_win.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="data\OdaQtApp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\images\SmartCL\settingsDlg.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\..\..\temp\build\SmartClApp" UicDir=".\..\..\temp\GeneratedFiles" RccDir=".\..\..\temp\GeneratedFiles" Qt5Version_x0020_Win32="msvc2013" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

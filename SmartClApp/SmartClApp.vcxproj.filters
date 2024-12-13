@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="mainFormFiles">
+      <UniqueIdentifier>{6d6d9db4-dea4-43bf-8638-8b83c53b027a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIAutilityFiles">
+      <UniqueIdentifier>{8d6fb62e-4054-4194-9921-f3eec1270575}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppPlotCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExAppServicesImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqAppProps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqCustomization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqMainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqPlotDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqPropertyDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqPropertyPalette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqXmlUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropServicesImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Services.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\Kernel\Extensions\ExServices\ExSystemServices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqPropertyPalette.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqPropertyDialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqPlotDialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqMainWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqCustomization.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqAppProps.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_OdqApplication.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\qrc_data.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainFormFiles\ClListWidget.cpp">
+      <Filter>mainFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_ClListWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\HHeaderItemDelegate.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_HHeaderItemDelegate.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\HHeaderModel.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_HHeaderModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\HHeaderView.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_HHeaderView.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\UIAutility.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="mainFormFiles\AddClByType_Dlg.cpp">
+      <Filter>mainFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_AddClByType_Dlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainFormFiles\NewProject_Dlg.cpp">
+      <Filter>mainFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_NewProject_Dlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LeakDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainFormFiles\VersionUpdateDialog.cpp">
+      <Filter>mainFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_VersionUpdateDialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsDlg.cpp">
+      <Filter>mainFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClApp\moc_SettingsDlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExAppServicesImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="OdqAppProps.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OdqApplication.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OdqCustomization.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OdqMainWindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OdqPlotDialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OdqPropertyDialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OdqPropertyPalette.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="OdqXmlUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropServicesImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResBufPropValueBaseConvertors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Services.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\ExAppServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Kernel\Common\ExDynamicModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqAudit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqClipData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqInterfaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\PropServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIAutilityFiles\UIAutility.h">
+      <Filter>UIAutilityFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="LeakDetector .h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\images\visual_style\2d_wireframe.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\visual_style\3d_hidden.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\visual_style\3d_wireframe.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\cui\ExCommands.cui">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ODA-Based.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\prop-patterns\OdDbArc.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\prop-patterns\OdDbCircle.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\prop-patterns\OdDbEllipse.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\prop-patterns\OdDbEntity.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\prop-patterns\OdDbHatch.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\prop-patterns\OdDbLine.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\about.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\about_caustic.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\box.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\check\check_off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\check\check_on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\help\commands.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\rev\commit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\visual_style\conceptual.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\cone.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\rev\create_branch.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\cylinder.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="data\data.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="data\help\developer.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\file_new.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\file_open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\file_print.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\file_save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\file_save_as.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\rev\gear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\help\help.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\hlp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_filter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_filter_group.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_freeze.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_lock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_plot.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_status_cur.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_unfreeze.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_unlock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\layer\layer_unplot.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\line.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\rev\merge.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\help\net-developer.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\oda_qt_props.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\oda_qt_props_caustic.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\odalogo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\odalogofull.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\cui\odq_menu_base.cui">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\cui\odq_toolbar_base.cui">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\cui\odq_toolbar_tigdb_tx.cui">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\cui\odq_toolbar_tstcmds_tx.cui">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\orbit\orbit_constrained.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\orbit\orbit_continuous.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\orbit\orbit_free.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\plot\orientation_l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\plot\orientation_l_rev.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\plot\orientation_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\plot\orientation_p_rev.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\polysolid.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\pyramid.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\visual_style\realistic.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\redo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\rev\refresh.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\regen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\sphere.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\plot\style.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\syswindows\syswindows_arrange.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\syswindows\syswindows_cascade.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\syswindows\syswindows_hor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\syswindows\syswindows_vert.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\rev\to_tig.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\property\tool_pickadd0.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\property\tool_pickadd1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\rev\tool_rev.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\property\tool_select.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\torus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\test\tst_commit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\test\tst_redo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\test\tst_undo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\test\tst_update.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\undo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_back.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_bottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_front.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_left.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_ne.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_nw.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_orb.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_se.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_sw.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\view_top.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\draw\wedge.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\zoom_ext.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\zoom_in.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\zoom_out.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\zoom_win.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Copy_Dlg" />
+    <None Include="data\images\Dark.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\Light.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\images\White.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="data\OdaQtApp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainFormFiles\ClListWidget.h">
+      <Filter>mainFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\HHeaderItemDelegate.h">
+      <Filter>UIAutilityFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\HHeaderModel.h">
+      <Filter>UIAutilityFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\HHeaderView.h">
+      <Filter>UIAutilityFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainFormFiles\AddClByType_Dlg.h">
+      <Filter>mainFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainFormFiles\NewProject_Dlg.h">
+      <Filter>mainFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainFormFiles\VersionUpdateDialog.h">
+      <Filter>mainFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SettingsDlg.h">
+      <Filter>mainFormFiles</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\images\SmartCL\settingsDlg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

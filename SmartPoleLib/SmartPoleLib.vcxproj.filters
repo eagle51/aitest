@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DataBase">
+      <UniqueIdentifier>{111e7412-c5d1-4bba-9e0c-9a9019208986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{8ea1987a-2a06-4cd4-b60c-123d8e3e99bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{431c20a8-3b3a-4774-9fdf-7e8abe561899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{5d81c0b2-2f15-4cbf-8f92-74c823e7ace5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataBase\BaseElement.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Component.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\DesignParameter.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\ElemArray.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\FamilyManager.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Member.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\MemberArray.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\ModelDateBase.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\NGP_Info.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\NGPManager.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Node.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\NodeArray.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\NonPipeProfile.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\pipeProfile.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Point.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\PointArray.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Profile.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\SinglePole.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Vec3D.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception\ErrMsgExporter.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception\ExceptionMessage.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception\FamilyException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception\MemberException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception\NGPException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception\PointErrException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception\SmartException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\JsonFormatIO.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\PoleIO.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\AssociatedMemberArray.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Auxiliary.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Box3D.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Constants.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\EXPO.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\IntVector.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\IProcessBar.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\PlaneFunction.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\PointMap.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\RenumberingList.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\SharedObject.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataBase\BaseElement.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\BaseType.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Component.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\DesignParameter.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\ElemArray.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\FamilyManager.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Member.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\MemberArray.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\ModelDateBase.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\NGP_Info.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\NGPManager.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Node.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\NodeArray.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\NonPipeProfile.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\pipeProfile.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Point.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\PointArray.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Profile.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\SinglePole.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Vec3D.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception\ErrMsgExporter.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception\ExceptionMessage.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception\FamilyException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception\MemberException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception\NGPException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception\PointErrException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception\SmartException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\JsonFormatIO.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\PoleIO.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\AssociatedMemberArray.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Auxiliary.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Box3D.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Constants.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\EXPO.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\IntVector.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\IProcessBar.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\PlaneFunction.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\PointMap.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\RenumberingList.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\SharedHandle.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\SharedObject.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

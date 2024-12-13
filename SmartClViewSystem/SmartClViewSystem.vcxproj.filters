@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ClFormFiles">
+      <UniqueIdentifier>{082023c9-ebe5-49b7-b8b3-a366cd4cdcbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIAutilityFiles">
+      <UniqueIdentifier>{f48bdc05-0f51-4fea-b4b3-558a60fa0207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClFormFiles\Report">
+      <UniqueIdentifier>{24cff5c1-2014-4f07-b23d-0932da701ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClFormFiles\ClWidget">
+      <UniqueIdentifier>{ae51bad7-203b-44c4-9baf-192cfb23ab71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Osg">
+      <UniqueIdentifier>{300d1240-d26d-4051-9a1e-a81722bf8767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="ClFormFiles\ParaLib">
+      <UniqueIdentifier>{edcc4db5-5580-48ed-bdc5-362adb75e25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClFormFiles\TypicalHeadTemplate">
+      <UniqueIdentifier>{203a4960-31b7-400e-8279-c71729382d07}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OdqViewSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewSystemCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewSystemModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\Drawing\Editor\ExGripManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdqView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_OdqView.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_OdqViewSystem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\StTableWidget.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_StTableWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\SplitClipboardText.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_WpaButtonDelegate.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_WPA_Dlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_table_view.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_WireLibraryModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_SingleMeteRegionModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\ReportErrModel.cpp">
+      <Filter>ClFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_ReportErrModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\ReportErrWidget.cpp">
+      <Filter>ClFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_ReportErrWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_StraightWgt_I.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_StraightWgt.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_StraightWgt_V.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_StraightWgt_L.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\lineEditDelegate.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_lineEditDelegate.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_InsulatorParaDlg_I.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InsulatorParaDlg_I.cpp">
+      <Filter>ClFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_InsulatorParaDlg_V.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InsulatorParaDlg_V.cpp">
+      <Filter>ClFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_InsulatorParaDlg_L.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InsulatorParaDlg_L.cpp">
+      <Filter>ClFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\HtmlAutility.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_SgstGap_Dlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\StraightWgt.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\StraightWgt_I.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\StraightWgt_L.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\StraightWgt_V.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\table_view.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\ImportTowerDataDlg.cpp">
+      <Filter>ClFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_Question_Dlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Question_Dlg.cpp">
+      <Filter>ClFormFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_ImportTowerDataDlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\OsgDrawEnt.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\AdapterWidget.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_AdapterWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\CoordSystem.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\measureUtil.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\OsgCoordSystem.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\OsgMainpulator.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\OsgQt.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_OsgQt.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\OsgUIManager.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_OsgUIManager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\OsgView.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\GeneratedFiles\qrc_SmartClViewSystem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\ClWidgetFactory.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Osg\PickHandler.cpp">
+      <Filter>Osg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_PickHandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\MaxAngleWgt.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_MaxAngleWgt.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\MaxAngleWgt_I.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_MaxAngleWgt_I.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\MaxAngleWgt_V.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_MaxAngleWgt_V.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\ClWidget.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_ClWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Report_Straight.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Report_Straight_I.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Report_Straight_V.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Report_Straight_L.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Report.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_InsulatorLib_Dlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\InsulatorLib_Dlg.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\SgstGap_Dlg.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\WPA_Dlg.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\SingleMeteRegionModel.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\WireLibraryModel.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\WpaButtonDelegate.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\InsulatorLibWgt_I.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_InsulatorLibWgt_I.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\InsulatorLibWgt_L.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\InsulatorLibWgt_V.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Report_MaxAngle.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Report_MaxAngle_I.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\Report_MaxAngle_V.cpp">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\ComboDelegate.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_ComboDelegate.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_InsulatorLibWgt_L.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_InsulatorLibWgt_V.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\WireAvgHLib_Dlg.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_WireAvgHLib_Dlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\MeteAreaDlg.cpp">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_MeteAreaDlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAutilityFiles\ClTableWgt.cpp">
+      <Filter>UIAutilityFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_ClTableWgt.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\CalcPrincipleDlg.cpp">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_CalcPrincipleDlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\TypicalHeadTmplModel.cpp">
+      <Filter>ClFormFiles\TypicalHeadTemplate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_TypicalHeadTmplModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClFormFiles\TypicalHeadTmplWidget.cpp">
+      <Filter>ClFormFiles\TypicalHeadTemplate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\temp\build\SmartClViewSystem\moc_TypicalHeadTmplWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="OdqViewSystem.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="ViewSystemCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewSystemModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Drawing\Editor\ExGripManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Drawing\Qt\Common\OdqInterfaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="OdqView.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\StTableWidget.h">
+      <Filter>UIAutilityFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\ReportErrModel.h">
+      <Filter>ClFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\ReportErrWidget.h">
+      <Filter>ClFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\lineEditDelegate.h">
+      <Filter>UIAutilityFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InsulatorParaDlg_I.h">
+      <Filter>ClFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InsulatorParaDlg_V.h">
+      <Filter>ClFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InsulatorParaDlg_L.h">
+      <Filter>ClFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\StraightWgt.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\StraightWgt_I.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\StraightWgt_L.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\StraightWgt_V.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\table_view.h">
+      <Filter>UIAutilityFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\ImportTowerDataDlg.h">
+      <Filter>ClFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\Question_Dlg.h">
+      <Filter>ClFormFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Osg\AdapterWidget.h">
+      <Filter>Osg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Osg\OsgQt.h">
+      <Filter>Osg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Osg\OsgUIManager.h">
+      <Filter>Osg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="data\SmartClViewSystem.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Osg\PickHandler.h">
+      <Filter>Osg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\MaxAngleWgt.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\MaxAngleWgt_I.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\MaxAngleWgt_V.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\ClWidget.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\InsulatorLib_Dlg.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\SgstGap_Dlg.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\WPA_Dlg.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\SingleMeteRegionModel.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\WireLibraryModel.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\WpaButtonDelegate.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\InsulatorLibWgt_I.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\InsulatorLibWgt_L.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\InsulatorLibWgt_V.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\ComboDelegate.h">
+      <Filter>UIAutilityFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\WireAvgHLib_Dlg.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\MeteAreaDlg.h">
+      <Filter>ClFormFiles\ParaLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIAutilityFiles\ClTableWgt.h">
+      <Filter>UIAutilityFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\CalcPrincipleDlg.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\TypicalHeadTmplModel.h">
+      <Filter>ClFormFiles\TypicalHeadTemplate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClFormFiles\TypicalHeadTmplWidget.h">
+      <Filter>ClFormFiles\TypicalHeadTemplate</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="data\OdqViewSystem.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Kernel\Common\ExDynamicModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIAutilityFiles\SplitClipboardText.h">
+      <Filter>UIAutilityFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\HtmlAutility.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="Osg\OsgDrawEnt.h">
+      <Filter>Osg</Filter>
+    </ClInclude>
+    <ClInclude Include="Osg\CoordSystem.h">
+      <Filter>Osg</Filter>
+    </ClInclude>
+    <ClInclude Include="Osg\measureUtil.h">
+      <Filter>Osg</Filter>
+    </ClInclude>
+    <ClInclude Include="Osg\OsgCoordSystem.h">
+      <Filter>Osg</Filter>
+    </ClInclude>
+    <ClInclude Include="Osg\OsgMainpulator.h">
+      <Filter>Osg</Filter>
+    </ClInclude>
+    <ClInclude Include="Osg\OsgView.h">
+      <Filter>Osg</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\ClWidgetFactory.h">
+      <Filter>ClFormFiles\ClWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\Report_Straight.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\Report_Straight_I.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\Report_Straight_V.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\Report_Straight_L.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\Report.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\Report_MaxAngle.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\Report_MaxAngle_I.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="ClFormFiles\Report_MaxAngle_V.h">
+      <Filter>ClFormFiles\Report</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\images\ALLs.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\front.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\back.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\left.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\right.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\top.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\bottom.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\measuring.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\Reversal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\images\select.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{fe0e5bda-8a4e-4d1a-8f2f-9a9ee088977e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{41fa3bf1-7f9e-46ea-880e-3b7984713ef3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="JSON">
+      <UniqueIdentifier>{bf08383e-c5ac-41a3-892e-560dd61dd176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="coreSrc">
+      <UniqueIdentifier>{64611af6-bec8-4886-9ea8-fa63b35c34f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rd\JSON_Src\json_reader.cpp">
+      <Filter>JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\JSON_Src\json_value.cpp">
+      <Filter>JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\JSON_Src\json_writer.cpp">
+      <Filter>JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\BaseElement.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\BasePart.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\Box3D.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\CodeRegister.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\Constants.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\DaoHengFormatIO.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\DiaphragmFaceInsert.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\ElemArray.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\ElementMap.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\ErrMsgExporter.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\ExceptionMessage.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\FloatVector.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\InnerUtility.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\IntVector.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\ISym.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\JSONIo.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\LegPart.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\LegPartLB.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\LineTextCounter.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\MemberArray.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\MemberInf.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\MetaModel.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\Node.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\NodeArray.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\NodeManager.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\NodeMap.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\PlaneFunction.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\PointTagIter.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\PrimaryPoint.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\PrimaryPointExt.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\RenumberingList.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\SecondaryPoint.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\SharedObject.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\SplitStr.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\StringContainer.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\SubInteger.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\TowerException.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\TowerModel.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\TowerModelIO.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\TowerPoint.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\TowerPointArray.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\TTAFormatIO.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\TTAType.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\Vec3D.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\VersionType.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\XBSecondaryPoint.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\XBTTAPFormatIO.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\ZheJiangTSTFormatIO.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartTower_Core_Src\ComplexHeadTmpl.cpp">
+      <Filter>coreSrc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\3rd\JSON_Src\autolink.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\config.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\features.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\forwards.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\json.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\json_batchallocator.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\reader.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\value.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\writer.h">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\json_internalarray.inl">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\json_internalmap.inl">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\json_valueiterator.inl">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\3rd\JSON_Src\sconscript">
+      <Filter>JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\ZheJiangTSTFormatIO.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\XBTTAPFormatIO.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\TTAFormatIO.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\TowerPointArray.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\TowerPoint.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\TowerModelIO.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\TowerModel.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\TowerException.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\SubInteger.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\StringContainer.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\StHandle.hpp">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\NodeArray.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\Node.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\MSGType.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\FloatVector.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\ExceptionMessage.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\ErrMsgExporter.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\ElementMap.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\ElemArray.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\DiaphragmFaceInsert.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\DaoHengFormatIO.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\Constants.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\config.hpp">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\BasePart.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\BaseElement.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\XBSecondaryPoint.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\VersionType.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\Vec3D.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\TTAType.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\SplitStr.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\SharedObject.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\SecondaryPoint.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\RenumberingList.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\PrimaryPointExt.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\PrimaryPoint.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\PointTagIter.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\PlaneFunction.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\NodeMap.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\NodeManager.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\MetaModel.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\MemberInf.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\MemberArray.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\LineTextCounter.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\LegPartLB.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\LegPart.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\JSONIo.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\ISym.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\IntVector.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\InnerUtility.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\CodeRegister.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\Box3D.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SmartTower_Core_Src\BaseType.h">
+      <Filter>coreSrc</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SmartTower_Core_Src\ComplexHeadTmpl.h">
+      <Filter>coreSrc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

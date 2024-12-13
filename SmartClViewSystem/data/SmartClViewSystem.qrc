@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/teigha/zoom_ext.png</file>
+        <file>images/teigha/view_top.png</file>
+        <file>images/teigha/view_bottom.png</file>
+        <file>images/osg/ALLs.png</file>
+        <file>images/osg/front.png</file>
+        <file>images/osg/back.png</file>
+        <file>images/osg/left.png</file>
+        <file>images/osg/right.png</file>
+        <file>images/osg/top.png</file>
+        <file>images/osg/bottom.png</file>
+        <file>images/osg/measuring.png</file>
+		    <file>images/osg/Reversal.png</file>
+	      <file>images/osg/select.png</file>
+    </qresource>
+</RCC>

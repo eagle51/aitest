@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{956293A2-9AAC-49C7-AD22-85C8CA52D340}</ProjectGuid>
+    <RootNamespace>SmartPoleLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\lib\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)..\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\lib\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)..\temp\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)SmartPoleLib\DataBase;$(SolutionDir)SmartPoleLib\Exception;$(SolutionDir)SmartPoleLib\IO;$(SolutionDir)SmartPoleLib\Utility;$(SolutionDir)..\3rd\JSON_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)SmartPoleLib\DataBase;$(SolutionDir)SmartPoleLib\Exception;$(SolutionDir)SmartPoleLib\IO;$(SolutionDir)SmartPoleLib\Utility;$(SolutionDir)..\3rd\JSON_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DataBase\BaseElement.cpp" />
+    <ClCompile Include="DataBase\Component.cpp" />
+    <ClCompile Include="DataBase\DesignParameter.cpp" />
+    <ClCompile Include="DataBase\ElemArray.cpp" />
+    <ClCompile Include="DataBase\FamilyManager.cpp" />
+    <ClCompile Include="DataBase\Member.cpp" />
+    <ClCompile Include="DataBase\MemberArray.cpp" />
+    <ClCompile Include="DataBase\ModelDateBase.cpp" />
+    <ClCompile Include="DataBase\NGPManager.cpp" />
+    <ClCompile Include="DataBase\NGP_Info.cpp" />
+    <ClCompile Include="DataBase\Node.cpp" />
+    <ClCompile Include="DataBase\NodeArray.cpp" />
+    <ClCompile Include="DataBase\NonPipeProfile.cpp" />
+    <ClCompile Include="DataBase\pipeProfile.cpp" />
+    <ClCompile Include="DataBase\Point.cpp" />
+    <ClCompile Include="DataBase\PointArray.cpp" />
+    <ClCompile Include="DataBase\Profile.cpp" />
+    <ClCompile Include="DataBase\SinglePole.cpp" />
+    <ClCompile Include="DataBase\Vec3D.cpp" />
+    <ClCompile Include="Exception\ErrMsgExporter.cpp" />
+    <ClCompile Include="Exception\ExceptionMessage.cpp" />
+    <ClCompile Include="Exception\FamilyException.cpp" />
+    <ClCompile Include="Exception\MemberException.cpp" />
+    <ClCompile Include="Exception\NGPException.cpp" />
+    <ClCompile Include="Exception\PointErrException.cpp" />
+    <ClCompile Include="Exception\SmartException.cpp" />
+    <ClCompile Include="IO\JsonFormatIO.cpp" />
+    <ClCompile Include="IO\PoleIO.cpp" />
+    <ClCompile Include="Utility\AssociatedMemberArray.cpp" />
+    <ClCompile Include="Utility\Auxiliary.cpp" />
+    <ClCompile Include="Utility\Box3D.cpp" />
+    <ClCompile Include="Utility\Constants.cpp" />
+    <ClCompile Include="Utility\EXPO.cpp" />
+    <ClCompile Include="Utility\IntVector.cpp" />
+    <ClCompile Include="Utility\IProcessBar.cpp" />
+    <ClCompile Include="Utility\PlaneFunction.cpp" />
+    <ClCompile Include="Utility\PointMap.cpp" />
+    <ClCompile Include="Utility\RenumberingList.cpp" />
+    <ClCompile Include="Utility\SharedObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataBase\BaseElement.h" />
+    <ClInclude Include="DataBase\BaseType.h" />
+    <ClInclude Include="DataBase\Component.h" />
+    <ClInclude Include="DataBase\DesignParameter.h" />
+    <ClInclude Include="DataBase\ElemArray.h" />
+    <ClInclude Include="DataBase\FamilyManager.h" />
+    <ClInclude Include="DataBase\Member.h" />
+    <ClInclude Include="DataBase\MemberArray.h" />
+    <ClInclude Include="DataBase\ModelDateBase.h" />
+    <ClInclude Include="DataBase\NGPManager.h" />
+    <ClInclude Include="DataBase\NGP_Info.h" />
+    <ClInclude Include="DataBase\Node.h" />
+    <ClInclude Include="DataBase\NodeArray.h" />
+    <ClInclude Include="DataBase\NonPipeProfile.h" />
+    <ClInclude Include="DataBase\pipeProfile.h" />
+    <ClInclude Include="DataBase\Point.h" />
+    <ClInclude Include="DataBase\PointArray.h" />
+    <ClInclude Include="DataBase\Profile.h" />
+    <ClInclude Include="DataBase\SinglePole.h" />
+    <ClInclude Include="DataBase\Vec3D.h" />
+    <ClInclude Include="Exception\ErrMsgExporter.h" />
+    <ClInclude Include="Exception\ExceptionMessage.h" />
+    <ClInclude Include="Exception\FamilyException.h" />
+    <ClInclude Include="Exception\MemberException.h" />
+    <ClInclude Include="Exception\NGPException.h" />
+    <ClInclude Include="Exception\PointErrException.h" />
+    <ClInclude Include="Exception\SmartException.h" />
+    <ClInclude Include="IO\JsonFormatIO.h" />
+    <ClInclude Include="IO\PoleIO.h" />
+    <ClInclude Include="Utility\AssociatedMemberArray.h" />
+    <ClInclude Include="Utility\Auxiliary.h" />
+    <ClInclude Include="Utility\Box3D.h" />
+    <ClInclude Include="Utility\Constants.h" />
+    <ClInclude Include="Utility\EXPO.h" />
+    <ClInclude Include="Utility\IntVector.h" />
+    <ClInclude Include="Utility\IProcessBar.h" />
+    <ClInclude Include="Utility\PlaneFunction.h" />
+    <ClInclude Include="Utility\PointMap.h" />
+    <ClInclude Include="Utility\RenumberingList.h" />
+    <ClInclude Include="Utility\SharedHandle.hpp" />
+    <ClInclude Include="Utility\SharedObject.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

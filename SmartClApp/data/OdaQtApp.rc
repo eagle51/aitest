@@ -1,0 +1,33 @@
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+
+#include "winres.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#endif //_WIN32
+
+#ifdef _DEBUG
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " SmartCl (Debug)"
+#else
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " SmartCl"
+#endif
+
+#define INTERNAL_NAME "SmartClApp\0"
+#define ORIGINAL_FILE_NAME "SmartClApp.exe\0"
+#define PRODUCT_NAME_ADDITION TD_PRODUCT_NAME_ADDITION_S
+#define COPYRIGHT_START_YEAR  TD_COPYRIGHT_START_YEAR_S
+
+#include "../../include/Drawing/VersionInfo.rc2"
+
+// test for OdaX problem via pro file // 1 24 "./TDXdependency.manifest"
+//IDI_ICON1               ICON    DISCARDABLE     "../../../../odalogo.ico"
+IDI_ICON1               ICON    DISCARDABLE     "../../include/Kernel/Logo/Icon-ODA.ico"
+
+#endif    // English (U.S.) resources
+
+/////////////////////////////////////////////////////////////////////////////
